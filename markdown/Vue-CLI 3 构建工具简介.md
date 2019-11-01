@@ -74,7 +74,7 @@ package.json
   "private": true,                          # 开源还是私人项目
   "scripts": {                              # 指定运行脚本的 npm 命令行缩写
     "serve": "vue-cli-service serve",       # npm serve = vue-cli-service serve
-    "build": "vue-cli-service build",       # 同上   
+    "build": "vue-cli-service build",       # 同上
     "lint": "vue-cli-service lint"          # 同上
   },
   "dependencies": {                         # 当前项目的依赖包及版本要求
@@ -84,7 +84,7 @@ package.json
     "vuex": "^3.0.1"
   },
   "devDependencies": {                      # 当前开发环境依赖包及版本要求
-    "@vue/cli-plugin-babel": "^3.8.0",      
+    "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-service": "^3.8.0",
     "@vue/eslint-config-airbnb": "^4.0.0",
@@ -102,6 +102,12 @@ package.json
       "vue-cli-service lint",               # 运行的命令
       "git add"
     ]
+  },
+  "vue":{                                   # vue-cli 的全局配置,可单独放置 vue.config.js 文件中，默认没有生成
+    "publicPath": "",                       # 官网示例为单独文件配置，后附文章详细简述配置项作用
+    ......
+    ......
+    ......
   }
 }
 
